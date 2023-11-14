@@ -7,8 +7,8 @@ class LoadingCustomWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LoadingAnimationWidget.newtonCradle(
-      color: Colors.yellowAccent,
-      size: 200,
+      color: Colors.blueGrey,
+      size: 150,
       
     );
   }

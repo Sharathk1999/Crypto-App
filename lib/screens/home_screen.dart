@@ -92,12 +92,12 @@ class HomeScreen extends StatelessWidget {
                                   Shimmer.fromColors(
                                     baseColor: greyColor,
                                     period:const Duration(seconds: 2),
-                                    highlightColor:  coinController.coinsList[index].priceChangePercentage24H < 1 ? Colors.red : Colors.green,
+                                    highlightColor:  coinController.coinsList[index].priceChangePercentage24H < 1 ? Colors.redAccent   : Colors.green,
                                     child: Text(
                                       '${coinController.coinsList[index].priceChangePercentage24H.toStringAsFixed(2)} %',
                                       style: textStyle(
                                         14,
-                                         coinController.coinsList[index].priceChangePercentage24H < 1 ? Colors.red : Colors.green,
+                                         greyColor,
                                         FontWeight.w600,
                                       ),
                                     ),
